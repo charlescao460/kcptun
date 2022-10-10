@@ -8,10 +8,10 @@ import (
 )
 
 const (
-	fecHeaderSize      = 6
+	fecHeaderSize      = 8
 	fecHeaderSizePlus2 = fecHeaderSize + 2 // plus 2B data size
-	typeData           = 0xf1
-	typeParity         = 0xf2
+	typeData           = 0xAA
+	typeParity         = 0x55
 	fecExpire          = 60000
 	rxFECMulti         = 3 // FEC keeps rxFECMulti* (dataShard+parityShard) ordered packets in memory
 )
